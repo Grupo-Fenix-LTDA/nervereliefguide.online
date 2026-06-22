@@ -1,0 +1,632 @@
+<!-- 24f58d396b6173d2 -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <meta property="og:title" content="Smart Odonto Holandeses — Clínica Odontológica em São Luís">
+    
+    
+    
+    
+    <title>Smart Odonto Holandeses — Clínica Odontológica em São Luís, MA | Nervereliefguide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --teal-dark: #0B6E6E;
+            --teal: #0E8C8C;
+            --teal-light: #E8F6F6;
+            --gold: #C9A84C;
+            --white: #FFFFFF;
+            --off-white: #F7F9FA;
+            --gray-100: #F0F2F4;
+            --gray-300: #D1D5DB;
+            --gray-600: #6B7280;
+            --gray-800: #1F2937;
+            --gray-900: #111827;
+            --radius: 8px;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            color: var(--gray-800);
+            line-height: 1.6;
+            background: var(--white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img { max-width: 100%; display: block; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        .jjd8_container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+        /* ===== HEADER ===== */
+        .jjd8_header {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            background: rgba(255,255,255,0.97);
+            border-bottom: 1px solid var(--gray-100);
+            backdrop-filter: blur(8px);
+        }
+        .jjd8_header-inner {
+            display: flex; align-items: center; justify-content: space-between;
+            max-width: 1100px; margin: 0 auto; padding: 14px 24px;
+        }
+        .jjd8_logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px; font-weight: 700; color: var(--teal-dark);
+            letter-spacing: -0.5px;
+        }
+        .jjd8_logo span { color: var(--gold); }
+        nav { display: flex; gap: 28px; align-items: center; }
+        nav a { font-size: 14px; font-weight: 500; color: var(--gray-600); transition: color .2s; }
+        nav a:hover { color: var(--teal-dark); }
+        .jjd8_btn-header {
+            background: var(--teal); color: var(--white);
+            padding: 10px 20px; border-radius: var(--radius);
+            font-size: 14px; font-weight: 600; transition: background .2s;
+        }
+        .jjd8_btn-header:hover { background: var(--teal-dark); }
+
+        .jjd8_hamburger {
+            display: none; background: none; border: none; cursor: pointer;
+            width: 28px; height: 20px; position: relative; z-index: 110;
+        }
+        .jjd8_hamburger span {
+            display: block; width: 100%; height: 2px; background: var(--gray-800);
+            position: absolute; left: 0; transition: .3s;
+        }
+        .jjd8_hamburger span:nth-child(1) { top: 0; }
+        .jjd8_hamburger span:nth-child(2) { top: 9px; }
+        .jjd8_hamburger span:nth-child(3) { top: 18px; }
+
+        /* ===== HERO ===== */
+        .jjd8_hero {
+            padding: 140px 0 80px;
+            background: linear-gradient(135deg, var(--teal-light) 0%, var(--white) 60%);
+        }
+        .jjd8_hero-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+        }
+        .jjd8_hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px; line-height: 1.2; color: var(--gray-900);
+            margin-bottom: 20px;
+        }
+        .jjd8_hero h1 em { font-style: normal; color: var(--teal); }
+        .jjd8_hero p { font-size: 17px; color: var(--gray-600); margin-bottom: 28px; max-width: 440px; }
+        .jjd8_btn-primary {
+            display: inline-block; background: var(--teal); color: var(--white);
+            padding: 14px 32px; border-radius: var(--radius);
+            font-size: 15px; font-weight: 600; transition: background .2s;
+        }
+        .jjd8_btn-primary:hover { background: var(--teal-dark); }
+        .jjd8_hero-visual {
+            background: var(--teal);
+            border-radius: 16px;
+            height: 380px;
+            display: flex; align-items: center; justify-content: center;
+            position: relative; overflow: hidden;
+        }
+        .jjd8_hero-visual::before {
+            content: ''; position: absolute; inset: 0;
+            background: radial-gradient(circle at 30% 40%, rgba(255,255,255,0.15) 0%, transparent 60%);
+        }
+        .jjd8_tooth-icon {
+            width: 120px; height: 120px; opacity: 0.25;
+        }
+
+        /* ===== SERVIÇOS ===== */
+        .jjd8_services { padding: 80px 0; background: var(--white); }
+        .jjd8_section-label {
+            font-size: 13px; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 2px; color: var(--teal); margin-bottom: 8px;
+        }
+        .jjd8_section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px; color: var(--gray-900); margin-bottom: 48px;
+        }
+        .jjd8_services-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+        }
+        .jjd8_service-card {
+            background: var(--off-white);
+            border-radius: var(--radius);
+            padding: 32px 28px;
+            transition: transform .2s, box-shadow .2s;
+        }
+        .jjd8_service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+        }
+        .jjd8_service-icon {
+            width: 44px; height: 44px; border-radius: 10px;
+            background: var(--teal-light); display: flex; align-items: center; justify-content: center;
+            margin-bottom: 18px; color: var(--teal); font-size: 20px;
+        }
+        .jjd8_service-card h3 { font-size: 17px; font-weight: 600; margin-bottom: 8px; color: var(--gray-900); }
+        .jjd8_service-card p { font-size: 14px; color: var(--gray-600); line-height: 1.6; }
+
+        /* ===== SOBRE ===== */
+        .jjd8_about { padding: 80px 0; background: var(--off-white); }
+        .jjd8_about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .jjd8_about-visual {
+            background: var(--gray-100); border-radius: 12px; height: 340px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 14px; color: var(--gray-600);
+        }
+        .jjd8_about h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 30px; color: var(--gray-900); margin-bottom: 18px;
+        }
+        .jjd8_about p { font-size: 15px; color: var(--gray-600); margin-bottom: 14px; }
+        .jjd8_about-stats { display: flex; gap: 40px; margin-top: 24px; }
+        .jjd8_stat-item .jjd8_stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px; font-weight: 700; color: var(--teal);
+        }
+        .jjd8_stat-item .jjd8_stat-label { font-size: 13px; color: var(--gray-600); }
+
+        /* ===== DEPOIMENTOS ===== */
+        .jjd8_testimonials { padding: 80px 0; background: var(--white); }
+        .jjd8_testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .jjd8_testimonial-card {
+            background: var(--off-white); border-radius: var(--radius);
+            padding: 28px; position: relative;
+        }
+        .jjd8_testimonial-card::before {
+            content: '\201C'; font-family: 'Playfair Display', serif;
+            font-size: 48px; color: var(--teal); opacity: 0.3;
+            position: absolute; top: 12px; left: 20px;
+        }
+        .jjd8_testimonial-card p {
+            font-size: 14px; color: var(--gray-600); line-height: 1.7;
+            margin-bottom: 16px; padding-top: 20px;
+        }
+        .jjd8_testimonial-author { font-size: 14px; font-weight: 600; color: var(--gray-900); }
+
+        /* ===== CONTATO ===== */
+        .jjd8_contact { padding: 80px 0; background: var(--off-white); }
+        .jjd8_contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+        .jjd8_contact h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 30px; color: var(--gray-900); margin-bottom: 18px;
+        }
+        .jjd8_contact-info { display: flex; flex-direction: column; gap: 18px; }
+        .jjd8_contact-item { display: flex; gap: 14px; align-items: flex-start; }
+        .jjd8_contact-item-icon {
+            width: 40px; height: 40px; border-radius: 10px;
+            background: var(--teal-light); display: flex; align-items: center; justify-content: center;
+            color: var(--teal); font-size: 16px; flex-shrink: 0;
+        }
+        .jjd8_contact-item-text { font-size: 14px; color: var(--gray-600); }
+        .jjd8_contact-item-text strong { display: block; color: var(--gray-900); font-weight: 600; margin-bottom: 2px; }
+
+        .jjd8_contact-form { display: flex; flex-direction: column; gap: 14px; }
+        .jjd8_contact-form input, .jjd8_contact-form textarea {
+            width: 100%; padding: 12px 16px; border: 1px solid var(--gray-300);
+            border-radius: var(--radius); font-family: inherit; font-size: 14px;
+            transition: border-color .2s; background: var(--white);
+        }
+        .jjd8_contact-form input:focus, .jjd8_contact-form textarea:focus {
+            outline: none; border-color: var(--teal);
+        }
+        .jjd8_contact-form textarea { resize: vertical; min-height: 100px; }
+        .jjd8_btn-submit {
+            background: var(--teal); color: var(--white); border: none;
+            padding: 14px 32px; border-radius: var(--radius);
+            font-size: 15px; font-weight: 600; cursor: pointer;
+            transition: background .2s; align-self: flex-start;
+        }
+        .jjd8_btn-submit:hover { background: var(--teal-dark); }
+
+        /* ===== FOOTER ===== */
+        .footer { background: var(--gray-900); color: var(--gray-300); padding: 48px 0 0; }
+        .jjd8_footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .jjd8_footer-brand .jjd8_logo { color: var(--white); margin-bottom: 12px; }
+        .jjd8_footer-brand p { font-size: 13px; line-height: 1.7; color: var(--gray-300); }
+        .footer h4 { font-size: 14px; font-weight: 600; color: var(--white); margin-bottom: 16px; }
+        .footer ul li { margin-bottom: 8px; }
+        .footer ul li a { font-size: 13px; color: var(--gray-300); transition: color .2s; }
+        .footer ul li a:hover { color: var(--white); }
+        .jjd8_footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding: 20px 0; text-align: center;
+            font-size: 12px; color: var(--gray-600);
+        }
+        .jjd8_footer-bottom a { color: var(--gray-300); transition: color .2s; }
+        .jjd8_footer-bottom a:hover { color: var(--white); }
+
+        /* ===== MODAL POLÍTICAS ===== */
+        .modal-overlay {
+            display: none; position: fixed; inset: 0; z-index: 200;
+            background: rgba(0,0,0,0.5); align-items: center; justify-content: center;
+            padding: 24px;
+        }
+        .modal-overlay.active { display: flex; }
+        .jjd8_modal {
+            background: var(--white); border-radius: 12px;
+            max-width: 680px; width: 100%; max-height: 80vh;
+            overflow-y: auto; padding: 40px;
+        }
+        .jjd8_modal h2 { font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 20px; color: var(--gray-900); }
+        .jjd8_modal p, .jjd8_modal li { font-size: 14px; color: var(--gray-600); line-height: 1.7; margin-bottom: 12px; }
+        .jjd8_modal ul { padding-left: 20px; list-style: disc; }
+        .jjd8_modal-close {
+            position: sticky; top: 0; float: right;
+            background: var(--gray-100); border: none; width: 32px; height: 32px;
+            border-radius: 50%; cursor: pointer; font-size: 18px;
+            display: flex; align-items: center; justify-content: center;
+        }
+
+        /* ===== LGPD BANNER ===== */
+        .jjd8_lgpd-banner {
+            position: fixed; bottom: 0; left: 0; right: 0; z-index: 150;
+            background: var(--gray-900); color: var(--gray-300);
+            padding: 16px 24px; display: none;
+            align-items: center; justify-content: center; gap: 16px;
+            font-size: 13px;
+        }
+        .jjd8_lgpd-banner.visible { display: flex; flex-wrap: wrap; }
+        .jjd8_lgpd-banner a { color: var(--white); text-decoration: underline; }
+        .jjd8_lgpd-accept {
+            background: var(--teal); color: var(--white); border: none;
+            padding: 8px 20px; border-radius: var(--radius);
+            font-size: 13px; font-weight: 600; cursor: pointer;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            nav { display: none; }
+            .jjd8_hamburger { display: block; }
+            nav.open {
+                display: flex; flex-direction: column;
+                position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+                background: var(--white); z-index: 105;
+                align-items: center; justify-content: center; gap: 24px;
+            }
+            nav.open a { font-size: 18px; }
+            .jjd8_hero-grid, .jjd8_about-grid, .jjd8_contact-grid, .jjd8_footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .jjd8_hero { padding: 120px 0 60px; }
+            .jjd8_hero h1 { font-size: 32px; }
+            .jjd8_hero-visual { height: 260px; }
+            .jjd8_services-grid, .jjd8_testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            .jjd8_about-stats { gap: 24px; }
+            .jjd8_footer-grid { gap: 24px; }
+            .jjd8_lgpd-banner { flex-direction: column; text-align: center; }
+        }
+    </style>
+
+<link rel="canonical" href="https://nervereliefguide.online/">
+<meta name="description" content="Acesse nervereliefguide.online para obter informações completas e atualizadas. Conteúdo exclusivo preparado para você.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nervereliefguide.online/">
+<meta property="og:site_name" content="nervereliefguide.online">
+<meta property="og:description" content="Acesse nervereliefguide.online para obter informações completas e atualizadas. Conteúdo exclusivo preparado para você.">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="nervereliefguide.online">
+<meta name="generator" content="cms-e6a8abc972cf">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Nervereliefguide","url":"https://nervereliefguide.online/","datePublished":"2025-02-26","dateModified":"2026-03-26","inLanguage":"pt-BR","isPartOf":{"@type":"WebSite","name":"Nervereliefguide","url":"https://nervereliefguide.online/"},"publisher":{"@type":"Organization","name":"Nervereliefguide","url":"https://nervereliefguide.online/"}}</script>
+
+<style>:root{--usvo-p:rgb(230,10,25);--usvo-s:rgb(104,34,112);--usvo-id:'912312134327'}@keyframes tiijfscu{from{opacity:1}to{opacity:1}}.ylqwwt{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}</style>
+<!-- b:choytv3dz4 v4.18.979 -->
+</head>
+<body data-s="90cdcc7b" data-p="rtitre">
+<noscript><div style="padding:15px;text-align:center;font-size:14px;"><p>JavaScript é necessário para visualizar o conteúdo completo de nervereliefguide.</p></div></noscript>
+
+<!-- HEADER -->
+<header class="jjd8_header">
+    <div class="jjd8_header-inner">
+        <a href="#" class="jjd8_logo">Smart<span>Odonto</span></a>
+        <nav id="mainNav">
+            <a href="#servicos">Tratamentos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#contato">Contato</a>
+            <a href="#contato" class="jjd8_btn-header">Agende sua Avaliação</a>
+        </nav>
+        <button class="jjd8_hamburger" id="menuToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="jjd8_hero">
+    <div class="jjd8_container">
+        <div class="jjd8_hero-grid">
+            <div>
+                <h1>Restaure seu sorriso com <em>odontologia moderna</em></h1>
+                <p>Clínica odontológica em São Luís especializada em implantes dentários, lentes de contato dental e próteses. Profissionais qualificados e estrutura pensada para o seu conforto.</p>
+                <a href="#contato" class="jjd8_btn-primary">Agende sua Avaliação</a>
+            </div>
+            <div class="jjd8_hero-visual">
+                <svg class="jjd8_tooth-icon" viewBox="0 0 100 120" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 5C35 5 22 15 18 30C14 45 18 55 22 65C26 75 30 90 35 105C37 112 40 115 43 115C46 115 48 110 50 100C52 110 54 115 57 115C60 115 63 112 65 105C70 90 74 75 78 65C82 55 86 45 82 30C78 15 65 5 50 5Z"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="jjd8_services" id="servicos">
+    <div class="jjd8_container">
+        <div class="jjd8_section-label">Nossos Tratamentos</div>
+        <h2 class="jjd8_section-title">Cuidado completo para a sua saúde bucal</h2>
+        <div class="jjd8_services-grid">
+            <div class="jjd8_service-card">
+                <div class="jjd8_service-icon">🦷</div>
+                <h3>Implantes Dentários</h3>
+                <p>Reabilitação oral com implantes de alta qualidade, devolvendo função mastigatória e estética ao seu sorriso.</p>
+            </div>
+            <div class="jjd8_service-card">
+                <div class="jjd8_service-icon">✨</div>
+                <h3>Lentes de Contato Dental</h3>
+                <p>Laminados ultrafinos em porcelana que corrigem cor, formato e alinhamento dos dentes com resultado natural.</p>
+            </div>
+            <div class="jjd8_service-card">
+                <div class="jjd8_service-icon">🔧</div>
+                <h3>Prótese Protocolo</h3>
+                <p>Prótese fixa sobre implantes para pacientes que perderam todos ou a maioria dos dentes de uma arcada.</p>
+            </div>
+            <div class="jjd8_service-card">
+                <div class="jjd8_service-icon">⚡</div>
+                <h3>Carga Imediata</h3>
+                <p>Instalação de implante e prótese provisória no mesmo dia, reduzindo o tempo de tratamento.</p>
+            </div>
+            <div class="jjd8_service-card">
+                <div class="jjd8_service-icon">🦴</div>
+                <h3>Enxerto Ósseo</h3>
+                <p>Reconstrução de volume ósseo para viabilizar a instalação de implantes em casos de perda óssea.</p>
+            </div>
+            <div class="jjd8_service-card">
+                <div class="jjd8_service-icon">😁</div>
+                <h3>Clareamento Dental</h3>
+                <p>Procedimento seguro para clarear os dentes em consultório, com resultados visíveis em poucas sessões.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SOBRE -->
+<section class="jjd8_about" id="sobre">
+    <div class="jjd8_container">
+        <div class="jjd8_about-grid">
+            <div class="jjd8_about-visual">
+                <p>📍 Av. dos Holandeses, São Luís - MA</p>
+            </div>
+            <div>
+                <div class="jjd8_section-label">Sobre Nós</div>
+                <h2>Odontologia moderna no coração de São Luís</h2>
+                <p>Somos uma clínica odontológica localizada no bairro Calhau, em São Luís do Maranhão. Nossa estrutura foi planejada para oferecer conforto e segurança em cada etapa do atendimento.</p>
+                <p>Contamos com profissionais especializados em implantodontia, prótese, ortodontia e estética dental. Cada tratamento é conduzido com acompanhamento individualizado, da avaliação inicial ao resultado final.</p>
+                <div class="jjd8_about-stats">
+                    <div class="jjd8_stat-item">
+                        <div class="jjd8_stat-number">5+</div>
+                        <div class="jjd8_stat-label">Anos de atendimento</div>
+                    </div>
+                    <div class="jjd8_stat-item">
+                        <div class="jjd8_stat-number">6</div>
+                        <div class="jjd8_stat-label">Especialidades</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="jjd8_testimonials" id="depoimentos">
+    <div class="jjd8_container">
+        <div class="jjd8_section-label">Depoimentos</div>
+        <h2 class="jjd8_section-title">O que nossos pacientes dizem</h2>
+        <div class="jjd8_testimonials-grid">
+            <div class="jjd8_testimonial-card">
+                <p>Fui muito bem atendida desde a recepção até o consultório. A equipe explicou cada etapa do tratamento com paciência e cuidado.</p>
+                <div class="jjd8_testimonial-author">Maria C.</div>
+            </div>
+            <div class="jjd8_testimonial-card">
+                <p>Fiz meus implantes na clínica e estou muito satisfeito com o resultado. O ambiente é moderno e os profissionais transmitem confiança.</p>
+                <div class="jjd8_testimonial-author">José R.</div>
+            </div>
+            <div class="jjd8_testimonial-card">
+                <p>Sempre tive receio de ir ao dentista, mas na Smart Odonto me senti acolhida. Recomendo para quem procura um atendimento humanizado.</p>
+                <div class="jjd8_testimonial-author">Ana L.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTATO -->
+<section class="jjd8_contact" id="contato">
+    <div class="jjd8_container">
+        <div class="jjd8_contact-grid">
+            <div>
+                <div class="jjd8_section-label">Fale Conosco</div>
+                <h2>Agende sua avaliação</h2>
+                <p style="font-size:15px;color:var(--gray-600);margin-bottom:28px;">Entre em contato pelos nossos canais ou preencha o formulário. Nossa equipe retorna em horário comercial.</p>
+                <div class="jjd8_contact-info">
+                    <div class="jjd8_contact-item">
+                        <div class="jjd8_contact-item-icon">📍</div>
+                        <div class="jjd8_contact-item-text">
+                            <strong>Endereço</strong>
+                            Av. Deputado Nagib Haickel, 4, Esquina com Av. dos Holandeses<br>Calhau, São Luís - MA, CEP 65.071-370
+                        </div>
+                    </div>
+                    <div class="jjd8_contact-item">
+                        <div class="jjd8_contact-item-icon">📞</div>
+                        <div class="jjd8_contact-item-text">
+                            <strong>Telefone</strong>
+                            (98) 8419-1088
+                        </div>
+                    </div>
+                    <div class="jjd8_contact-item">
+                        <div class="jjd8_contact-item-icon">✉️</div>
+                        <div class="jjd8_contact-item-text">
+                            <strong>E-mail</strong>
+                            leahj777@gmail.com
+                        </div>
+                    </div>
+                    <div class="jjd8_contact-item">
+                        <div class="jjd8_contact-item-icon">🕐</div>
+                        <div class="jjd8_contact-item-text">
+                            <strong>Horário de Funcionamento</strong>
+                            Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <form class="jjd8_contact-form" onsubmit="event.preventDefault(); alert('Mensagem enviada! Entraremos em contato em breve.');">
+                    <input type="text" placeholder="Nome completo" required>
+                    <input type="tel" placeholder="Telefone" required>
+                    <input type="email" placeholder="E-mail">
+                    <textarea placeholder="Como podemos ajudar?"></textarea>
+                    <button type="submit" class="jjd8_btn-submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="jjd8_container">
+        <div class="jjd8_footer-grid">
+            <div class="jjd8_footer-brand">
+                <div class="jjd8_logo">Smart<span>Odonto</span></div>
+                <p>Clínica odontológica em São Luís, MA. Tratamentos modernos com profissionais especializados para cuidar da sua saúde bucal com conforto e segurança.</p>
+            </div>
+            <div>
+                <h4>Tratamentos</h4>
+                <ul>
+                    <li><a href="#servicos">Implantes Dentários</a></li>
+                    <li><a href="#servicos">Lentes de Contato</a></li>
+                    <li><a href="#servicos">Prótese Protocolo</a></li>
+                    <li><a href="#servicos">Clareamento Dental</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Institucional</h4>
+                <ul>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#" onclick="openModal('privacidade'); return false;">Política de Privacidade</a></li>
+                    <li><a href="#" onclick="openModal('termos'); return false;">Termos de Uso</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="jjd8_footer-bottom">
+            <p>&copy; 2025 Smart Odonto Holandeses — Todos os direitos reservados</p>
+            <p style="margin-top:6px;">CALISTO ODONTOLOGIA LTDA | CNPJ: 36.725.708/0001-57</p>
+            <p style="margin-top:4px;">Av. Deputado Nagib Haickel, 4, Esquina com Av. dos Holandeses, Calhau, São Luís - MA, CEP 65.071-370</p>
+            <p style="margin-top:4px;">Telefone: (98) 8419-1088 | E-mail: leahj777@gmail.com</p>
+        </div>
+    </div>
+</footer>
+
+<!-- MODAL PRIVACIDADE -->
+<div class="modal-overlay" id="modalPrivacidade">
+    <div class="jjd8_modal">
+        <button class="jjd8_modal-close" onclick="closeModal('privacidade')">&times;</button>
+        <h2>Política de Privacidade</h2>
+        <p><strong>CALISTO ODONTOLOGIA LTDA</strong> (CNPJ: 36.725.708/0001-57), com sede na Av. Deputado Nagib Haickel, 4, Esquina com Av. dos Holandeses, Calhau, São Luís - MA, CEP 65.071-370, é responsável pelo tratamento dos dados pessoais coletados neste site.</p>
+        <p><strong>Dados coletados:</strong> nome, telefone, e-mail e mensagem enviada pelo formulário de contato.</p>
+        <p><strong>Finalidade:</strong> os dados são utilizados exclusivamente para responder solicitações de agendamento e atendimento odontológico.</p>
+        <p><strong>Compartilhamento:</strong> não compartilhamos dados pessoais com terceiros, exceto quando exigido por lei ou autoridade competente.</p>
+        <p><strong>Armazenamento:</strong> os dados são armazenados em ambiente seguro, com acesso restrito aos profissionais autorizados da clínica.</p>
+        <p><strong>Direitos do titular:</strong> nos termos da Lei Geral de Proteção de Dados (Lei 13.709/2018), você pode solicitar acesso, correção, exclusão ou portabilidade dos seus dados a qualquer momento pelo e-mail leahj777@gmail.com.</p>
+        <p><strong>Cookies:</strong> este site pode utilizar cookies para melhorar a experiência de navegação. Você pode desativar cookies nas configurações do seu navegador.</p>
+        <p>Esta política pode ser atualizada periodicamente. Última atualização: junho de 2025.</p>
+    </div>
+</div>
+
+<!-- MODAL TERMOS -->
+<div class="modal-overlay" id="modalTermos">
+    <div class="jjd8_modal">
+        <button class="jjd8_modal-close" onclick="closeModal('termos')">&times;</button>
+        <h2>Termos de Uso</h2>
+        <p>Ao acessar e utilizar este site, você concorda com os termos abaixo.</p>
+        <p><strong>Propriedade:</strong> este site é de propriedade e operado por <strong>CALISTO ODONTOLOGIA LTDA</strong> (CNPJ: 36.725.708/0001-57).</p>
+        <p><strong>Finalidade do site:</strong> apresentar os serviços odontológicos oferecidos pela clínica Smart Odonto Holandeses e facilitar o contato para agendamento de consultas.</p>
+        <p><strong>Conteúdo informativo:</strong> as informações sobre tratamentos possuem caráter informativo e não substituem consulta presencial com profissional habilitado. Diagnósticos e planos de tratamento são definidos exclusivamente em consulta clínica.</p>
+        <p><strong>Propriedade intelectual:</strong> todo o conteúdo deste site, incluindo textos, imagens e design, é protegido por direitos autorais. A reprodução total ou parcial sem autorização prévia é proibida.</p>
+        <p><strong>Responsabilidade:</strong> não nos responsabilizamos por indisponibilidades temporárias do site ou por eventuais danos decorrentes do uso das informações publicadas.</p>
+        <p><strong>Legislação aplicável:</strong> estes termos são regidos pela legislação brasileira, com foro da comarca de São Luís - MA para dirimir eventuais controvérsias.</p>
+        <p><strong>Contato:</strong> dúvidas sobre estes termos podem ser direcionadas ao e-mail leahj777@gmail.com ou pelo telefone (98) 8419-1088.</p>
+        <p>Última atualização: junho de 2025.</p>
+    </div>
+</div>
+
+<!-- LGPD BANNER -->
+<div class="jjd8_lgpd-banner visible" id="lgpdBanner">
+    <p>Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="#" onclick="openModal('privacidade'); return false;">Política de Privacidade</a>.</p>
+    <button class="jjd8_lgpd-accept" onclick="document.getElementById('lgpdBanner').classList.remove('visible');">Aceitar</button>
+</div>
+
+<script>
+// Menu mobile
+document.getElementById('menuToggle').addEventListener('click', function() {
+    document.getElementById('mainNav').classList.toggle('open');
+});
+
+// Fechar menu ao clicar em link
+document.querySelectorAll('#mainNav a').forEach(function(link) {
+    link.addEventListener('click', function() {
+        document.getElementById('mainNav').classList.remove('open');
+    });
+});
+
+// Modais
+function openModal(type) {
+    var id = type === 'privacidade' ? 'modalPrivacidade' : 'modalTermos';
+    document.getElementById(id).classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal(type) {
+    var id = type === 'privacidade' ? 'modalPrivacidade' : 'modalTermos';
+    document.getElementById(id).classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// Fechar modal clicando fora
+document.querySelectorAll('.modal-overlay').forEach(function(overlay) {
+    overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+});
+
+// Failsafe: garantir que rodapé e modais são visíveis
+(function() {
+    var footer = document.querySelector('.footer');
+    var modals = document.querySelectorAll('.modal-overlay');
+    if (footer) { footer.style.display = 'block'; footer.style.visibility = 'visible'; }
+    modals.forEach(function(m) { m.style.visibility = 'visible'; });
+})();
+</script>
+
+<footer style="text-align:center;padding:18px 12px;font-size:11px;color:#aaa;margin-top:35px;border-top:1px solid #f0f0f0"><p>Nervereliefguide — Conteúdo exclusivo e verificado. © 2026 | Todos os direitos reservados. <a href="https://nervereliefguide.online/" style="color:#aaa;text-decoration:none">nervereliefguide.online</a></p></footer>
+</body>
+</html>
+
+<!-- 5ecfae562f76d045ffd529fb -->
